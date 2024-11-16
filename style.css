@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #0A0C1B;
+    color: #9996B2;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.parent{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    height: 90%;
+    display:flex;
+    background-color: #1C1938;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px  ;
+}
+
+
+.section1{
+    display: flex;
+    height: 33%; 
+    background-color: #A75FDB;
+    border-radius: 10px 10px 0px 0px ;
+}
+img{
+    flex: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px ;
+    vertical-align: bottom;
+    opacity: 0.4;
+}
+.section2{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 100%;
+    align-items: center;
+    padding: 20px;
+}
+.section2 p {
+    margin-bottom: 10px;
+}
+p , .block3 div{
+    text-align: center;
+}
+.block3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    font-family: "Lexend Deca", sans-serif;
+}
+.block3 p{
+    font-size: 10px;
+}
+h3{
+    color: white;
+}
+#get{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size:25px;
+    color: white;
+    
+}
+#get span{
+    color: #A75FDB;
+}
+@media screen and (min-width:331px){
+    .section1{
+        height: 40%;
+        width: 100%;
+    }
+    img{
+        height: 100%;
+    
+    }
+    
+    .block3{
+        height: 40%;
+    }
+}
+@media screen and (min-width:700px){
+    .container{
+        flex-direction: row-reverse;
+        height: 50%;
+        
+    }
+    .section1{
+        flex: 50%;
+        height: 100%;
+        border-radius: 0px 10px 10px 0px;
+    }
+    img{
+        height: 100%;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .section1::before{
+       flex: 100%;
+    }
+    .section2{
+        flex: 50%;
+        box-sizing: border-box;
+        padding:40px ;
+        padding-right: 100px;
+        height: 100%;
+    }
+    p, #get{
+        text-align: start;
+    }
+    .block3{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width:1230px){
+    .container{
+        width: 60%;
+    }
+}
+
